@@ -6,8 +6,81 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/padding_for_main_screen"
+    android:background="?attr/colorOfMainScreenButton"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/ivIctisLogo"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ictis_logo" />
 
+    <TextView
+        android:id="@+id/tvMainHeader"
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ivIctisLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ivIctisLogo"
+        app:layout_constraintBottom_toBottomOf="@id/ivIctisLogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:text="@string/ictis" />
+
+    <android.widget.Button
+        android:id="@+id/bSchedule"
+        style="@style/MainScreenButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivIctisLogo"
+        app:layout_constraintBottom_toTopOf="@id/bNews"
+        android:layout_marginVertical="@dimen/padding_for_main_screen"
+        app:layout_constraintVertical_chainStyle="spread"
+        android:background="@drawable/background_for_main_screen_buttons"
+        android:text="@string/schedule"
+        app:icon="@drawable/schedule_icon" />
+
+    <android.widget.Button
+        android:id="@+id/bNews"
+        style="@style/MainScreenButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bSchedule"
+        app:layout_constraintBottom_toTopOf="@id/bStudentCabinet"
+        android:background="@drawable/background_for_main_screen_buttons"
+        android:text="@string/news" />
+
+    <android.widget.Button
+        android:id="@+id/bStudentCabinet"
+        style="@style/MainScreenButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bNews"
+        app:layout_constraintBottom_toTopOf="@id/bSettings"
+        android:layout_marginVertical="@dimen/padding_for_main_screen"
+        android:background="@drawable/background_for_main_screen_buttons"
+        android:text="@string/student_cabinet" />
+
+    <android.widget.Button
+        android:id="@+id/bSettings"
+        style="@style/MainScreenButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bStudentCabinet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/background_for_main_screen_buttons"
+        android:text="@string/settings" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

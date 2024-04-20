@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ICTIS schedule</string>
+    <string name="ictis">ICTIS</string>
+    <string name="schedule">Расписание</string>
+    <string name="news">Новости</string>
+    <string name="student_cabinet">Личный кабинет</string>
+    <string name="settings">Настройки</string>
 </resources>

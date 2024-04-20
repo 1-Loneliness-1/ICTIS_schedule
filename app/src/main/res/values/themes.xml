@@ -1,8 +1,8 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<resources>
     <style name="Base.Theme.ICTISSchedule" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorOfIctisLogo">@color/black</item>
+        <item name="colorOfStroke">@color/black</item>
+        <item name="colorOfMainScreenButton">@color/white</item>
     </style>
 
     <style name="Theme.ICTISSchedule" parent="Base.Theme.ICTISSchedule" />
