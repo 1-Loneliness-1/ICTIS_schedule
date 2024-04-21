@@ -41,10 +41,11 @@
         app:layout_constraintTop_toBottomOf="@id/ivIctisLogo"
         app:layout_constraintBottom_toTopOf="@id/bNews"
         android:layout_marginVertical="@dimen/padding_for_main_screen"
+        android:paddingHorizontal="76dp"
         app:layout_constraintVertical_chainStyle="spread"
         android:background="@drawable/background_for_main_screen_buttons"
         android:text="@string/schedule"
-        app:icon="@drawable/schedule_icon" />
+        android:drawableStart="@drawable/schedule_icon" />
 
     <android.widget.Button
         android:id="@+id/bNews"
@@ -55,8 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bSchedule"
         app:layout_constraintBottom_toTopOf="@id/bStudentCabinet"
+        android:paddingHorizontal="98dp"
         android:background="@drawable/background_for_main_screen_buttons"
-        android:text="@string/news" />
+        android:text="@string/news"
+        android:drawableStart="@drawable/news_icon" />
 
     <android.widget.Button
         android:id="@+id/bStudentCabinet"
@@ -68,8 +71,10 @@
         app:layout_constraintTop_toBottomOf="@id/bNews"
         app:layout_constraintBottom_toTopOf="@id/bSettings"
         android:layout_marginVertical="@dimen/padding_for_main_screen"
+        android:paddingHorizontal="44dp"
         android:background="@drawable/background_for_main_screen_buttons"
-        android:text="@string/student_cabinet" />
+        android:text="@string/student_cabinet"
+        android:drawableStart="@drawable/user_icon" />
 
     <android.widget.Button
         android:id="@+id/bSettings"
@@ -80,7 +85,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bStudentCabinet"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingHorizontal="80dp"
         android:background="@drawable/background_for_main_screen_buttons"
-        android:text="@string/settings" />
+        android:text="@string/settings"
+        android:drawableStart="@drawable/settings_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
