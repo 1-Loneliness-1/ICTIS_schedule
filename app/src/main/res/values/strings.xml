@@ -5,4 +5,8 @@
     <string name="news">Новости</string>
     <string name="student_cabinet">Личный кабинет</string>
     <string name="settings">Настройки</string>
+    <string name="enter_num_of_group_or_name">№ груп/фам препод/№ ауд</string>
+    <string name="current_class">Текущая пара: Методы и средства информационного обмена в интеллектуальных автоматизированных системах</string>
+    <string name="num_of_room">Аудитория: Г-301</string>
+    <string name="time_of_class">Время: 17:40 - 19:15</string>
 </resources>

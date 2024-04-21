@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/padding_for_main_screen"
+    android:background="?attr/colorOfMainScreenButton"
     tools:context=".ScheduleActivity">
 
     <ImageView
@@ -26,9 +27,47 @@
         app:layout_constraintTop_toTopOf="@id/ivBackArrow"
         app:layout_constraintBottom_toBottomOf="@id/ivBackArrow"
         app:layout_constraintHorizontal_bias="0.0"
-        android:layout_marginStart="@dimen/padding_for_elements"
+        android:layout_marginStart="@dimen/padding_for_main_screen"
         android:text="@string/schedule"
         android:textSize="@dimen/button_text_size" />
+
+    <TextView
+        android:id="@+id/tvCurrentClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBackArrow"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="@dimen/padding_for_main_screen"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/current_class"
+        android:textColor="?attr/colorOfIctisLogo" />
+
+    <TextView
+        android:id="@+id/tvNumOfRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrentClass"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="@dimen/padding_for_elements"
+        android:text="@string/num_of_room"
+        android:textColor="?attr/colorOfIctisLogo" />
+
+    <TextView
+        android:id="@+id/tvTimeOfClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvNumOfRoom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNumOfRoom"
+        app:layout_constraintBottom_toBottomOf="@id/tvNumOfRoom"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:text="@string/time_of_class"
+        android:textColor="?attr/colorOfIctisLogo" />
 
     <FrameLayout
         android:id="@+id/flNumOfGroup"
@@ -36,8 +75,39 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivBackArrow"
-        android:layout_marginTop="@dimen/padding_for_main_screen">
+        app:layout_constraintTop_toBottomOf="@id/tvNumOfRoom"
+        android:layout_marginTop="@dimen/padding_for_main_screen"
+        android:background="@drawable/background_for_schedule_edit_text">
+
+        <EditText
+            android:id="@+id/etEnterNameOfGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/padding_for_main_screen"
+            android:paddingVertical="@dimen/padding_for_elements"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:inputType="textAutoCorrect"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:hint="@string/enter_num_of_group_or_name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/cg_light"
+            android:imeOptions="actionDone"
+            android:background="@drawable/background_for_schedule_edit_text" />
+
+        <ImageButton
+            android:id="@+id/ibClearEditText"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/padding_for_elements"
+            app:srcCompat="@drawable/clear_icon"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_gravity="end|center_vertical"
+            android:visibility="gone" />
 
     </FrameLayout>
 
