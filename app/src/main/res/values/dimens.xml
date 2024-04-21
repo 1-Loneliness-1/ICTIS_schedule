@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="padding_for_main_screen">16dp</dimen>
+    <dimen name="padding_for_elements">8dp</dimen>
     <dimen name="header_text_size">34sp</dimen>
     <dimen name="button_text_size">22sp</dimen>
 </resources>

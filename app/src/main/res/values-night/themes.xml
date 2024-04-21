@@ -4,5 +4,6 @@
         <item name="colorOfIctisLogo">@color/white</item>
         <item name="colorOfStroke">@color/white</item>
         <item name="colorOfMainScreenButton">@color/black</item>
+        <item name="android:statusBarColor">@color/white</item>
     </style>
 </resources>
